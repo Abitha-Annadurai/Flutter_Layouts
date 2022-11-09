@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import '../layout/container_code.dart';
+import 'column_code.dart';
 import 'expand_code.dart';
 import '../layout/fractionalsizedbox_code.dart';
+import 'row_code.dart';
 import 'sizedbox_code.dart';
 import 'stack_code.dart';
 import 'wrap_code.dart';
@@ -36,6 +38,11 @@ class _LayoutTpyesState extends State<LayoutTpyes> {
               child: Column(
                 children: [
                   TextButton(onPressed: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => RowCode(),),);
+                  }, child: Text('Row',
+                    style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+                  )),
+                  TextButton(onPressed: (){
                     Navigator.of(context).push(MaterialPageRoute(builder: (context) => WarpCode(),),);
                   }, child: Text('Wrap',
                     style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
@@ -43,6 +50,11 @@ class _LayoutTpyesState extends State<LayoutTpyes> {
                   TextButton(onPressed: (){
                     Navigator.of(context).push(MaterialPageRoute(builder: (context) => StackCode(),),);
                   }, child: Text('Stack',
+                    style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+                  )),
+                  TextButton(onPressed: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => ColumnCode(),),);
+                  }, child: Text('Column',
                     style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
                   )),
                   TextButton(onPressed: (){
