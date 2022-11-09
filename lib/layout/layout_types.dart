@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout/layput/sizedbox_code.dart';
-import 'package:flutter_layout/layput/stack_code.dart';
-import 'package:flutter_layout/layput/wrap_code.dart';
-import 'container_code.dart';
+import '../layout/container_code.dart';
 import 'expand_code.dart';
-import 'fractionalsizedbox_code.dart';
+import '../layout/fractionalsizedbox_code.dart';
+import 'sizedbox_code.dart';
+import 'stack_code.dart';
+import 'wrap_code.dart';
 
 class LayoutTpyes extends StatefulWidget {
   const LayoutTpyes({Key? key}) : super(key: key);
